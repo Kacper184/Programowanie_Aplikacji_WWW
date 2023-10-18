@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="content-Language" content="pl"/>
+		<meta name="Author" content="Kacper Wach"/>
+        <title>PowerNotes</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="kolorujtlo.js" type="text/JavaScript"></script>
+        <script src="timedate.js" type="text/JavaScript"></script>
+    </head>
+    <body onload="startclock()">
+        <header>
+            <div class="logo">
+                <a>Power<a class="red-logo">Notes</a></a>
+            </div>
+            <ul class="navbar-ul">
+                <li class="nv-li"><a class="nv-links" href="menu.html">Menu</a></li>
+                <li class="nv-li"><a class="nv-links" href="contact.html">Kontakt</a></li>
+                <li class="nv-li"><a class="nv-links" href="howitworks.html">Jak to działa ?</a></li>
+                <li class="nv-li"><a class="nv-links" href="idea.html">Idea</a></li>
+                <li class="nv-li"><a class="nv-links" href="about.html">O mnie</a></li>
+                <li class="nv-li"><a class="nv-links" href="dojavy.html">JavaScript</a></li>
+            </ul>
+        </header>
+        <main>
+            <table class="contact">
+                <tr>
+                    <td colspan="3" class="title-form">Skontaktuj się z nami !</td>
+                </tr>
+                <tr>
+                    <form method="post" action="mailto:164438@student.uwm.edu.pl">
+                        <td><label>Imie: </label></td>
+                        <td><input type="text" class="center-input"></td>
+                        <td rowspan="8" class="table-text">
+                            <i class="low-cap">
+                                Przetwarzanie Danych Osobowych: Ochrona Twojej Prywatności
+                                W związku z obowiązującymi przepisami dotyczącymi ochrony danych osobowych, chcielibyśmy poinformować Cię o sposobach, w jakie gromadzimy, przechowujemy i przetwarzamy Twoje dane.
+                                1.	Cele Przetwarzania Danych: Naszym głównym celem w przetwarzaniu Twoich danych osobowych jest zapewnienie Ci jak najlepszej jakości usług oraz dostarczanie spersonalizowanych treści i informacji.
+                                <img src="https://cdn.pixabay.com/photo/2020/11/28/11/25/cookie-5784367_640.png" alt="błąd obrazka" class="img-bar3">
+                                2.	Rodzaje Danych Osobowych: W ramach naszych usług możemy gromadzić podstawowe informacje, takie jak imię, nazwisko, adres e-mail, numer telefonu, a także inne dane, które dobrowolnie nam udostępniasz.
+                                3.	Podstawy Prawne: Przetwarzanie Twoich danych osobowych opiera się na różnych podstawach prawnych, takich jak wyrażona przez Ciebie zgoda, konieczność wypełnienia umowy, obowiązek przetwarzania wynikający z przepisów prawa lub inny uprawniony interes.
+                                4.	Bezpieczeństwo Danych: Dbamy o bezpieczeństwo Twoich danych i stosujemy odpowiednie środki techniczne i organizacyjne, aby zabezpieczyć je przed nieuprawnionym dostępem, utratą lub nieautoryzowanym ujawnieniem.
+                                5.	Przechowywanie Danych: Dane są przechowywane przez określony czas, niezbędny do realizacji celów, dla których zostały zebrane, chyba że obowiązują nas przepisy prawa, które wymagają dłuższego okresu przechowywania.
+                                6.	Udostępnianie Danych Trzecim Stronom: W niektórych przypadkach możemy udostępniać Twoje dane osobowe podmiotom trzecim, takim jak dostawcy usług lub podmioty współpracujące, jednak tylko wtedy, gdy jest to niezbędne do świadczenia określonych usług.
+                                7.	Twoje Prawa: Masz prawo do dostępu do swoich danych osobowych, ich poprawiania, usuwania lub ograniczania przetwarzania. Możesz także wnieść sprzeciw wobec przetwarzania danych lub skorzystać z prawa do przenoszenia danych.
+                                8.	Kontakt: W razie pytań lub wątpliwości dotyczących przetwarzania Twoich danych osobowych, skontaktuj się z nami pod adresem [adres e-mail lub numer telefonu].
+                            </i>
+                        </td>
+                        <tr>
+                            <td><label>Nazwisko: </label></td>
+                            <td><input type="text" class="center-input"></td>
+                        </tr>
+                        <tr>
+                            <td><label>E-mail: </label></td>
+                            <td><input type="text" class="center-input"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Opis: </label></td>
+                            <td><input type="text" class="des-input"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="reset"></td>
+                            <td><input type="submit" class="center-input"></td>
+                        </tr>
+                    </form>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <div class="foot">
+                <b>Stworzył: Kacper <span class="color">Wach&nbsp;&nbsp;</span></b>
+                <i>Grupa 4, nr indeksu: 164438</i>
+                <div id="zegarek" class="clock_one"></div><br>
+                <div id="data" class="clock_one"></div>
+            </div>
+        </footer>
+    </body>
+</html>
