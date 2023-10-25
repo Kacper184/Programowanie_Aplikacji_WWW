@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="content-Language" content="pl"/>
+		<meta name="Author" content="Kacper Wach"/>
+        <title>PowerNotes</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/kolorujtlo.js" type="text/JavaScript"></script>
+        <script src="js/timedate.js" type="text/JavaScript"></script>
+        <script src="js/jquery-3.7.1.js"></script>
+    </head>
+    <body onload="startclock()">
+        <header>
+            <div class="logo">
+                <a>Power<a class="red-logo">Notes</a></a>
+            </div>
+            <ul class="navbar-ul">
+                <li class="nv-li"><a class="nv-links" href="\menu.html">Menu</a></li>
+                <li class="nv-li"><a class="nv-links" href="html/contact.html">Kontakt</a></li>
+                <li class="nv-li"><a class="nv-links" href="html/howitworks.html">Jak to działa ?</a></li>
+                <li class="nv-li"><a class="nv-links" href="html/idea.html">Idea</a></li>
+                <li class="nv-li"><a class="nv-links" href="html/about.html">O mnie</a></li>
+                <li class="nv-li"><a class="nv-links" href="html/dojavy.html">JavaScript</a></li>
+            </ul>
+        </header>
+        <main>
+            <div id="blockNews" class="news-block">Kliknij<br>Mnie</div>
+            <script>
+                $("#blockNews").on("click", function(){
+                        $(this).animate({
+                            width: "500px",
+                            height: "300px",
+                            fontSize: "3em",
+                            borderWidth: "10px"
+                        }, 1500, function() {
+                            $(this).text("Witaj na stronie")
+                        });
+                    })
+            </script>
+            <div>
+                <table class="menu-table">
+                    <tr>
+                        <td>
+                            <h1>Wykresy ...</h1>
+                            <i class="menu-bq-i">w krótce gdy będziemy dodawać skrypty do stron</i><br>
+                            <img src="https://cdn.pixabay.com/photo/2016/02/01/16/51/ascending-graph-1173935_960_720.png" alt="błąd obrazka" class="img-3bar">
+                            <b class="water text-color">Tu w przyszłości chciałbym zamieścić wykres generujący się na podstawie bazy danych w oparciu o wyniki sportowe</b>
+                            <br><u class="water">Grafika z <span class="water color">pixabay.com</span></u>
+                        </td>
+                        <td>
+                            <h1>Kalkulator ...</h1>
+                            <i class="menu-bq-i">w krótce gdy będziemy dodawać skrypty do stron </i><br>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Powerlifting.png" alt="błąd obrazka" class="img-3bar">
+                            <b class="water text-color">Tu w przyszłości chciałbym zamieścić kalkulator punktów IPF GL na podstawie osiągnięć</b>
+                            <br><u class="water">Grafika z <span class="water color">wikimedia.org</span></u>
+                        </td>
+                        <td>
+                            <h1>Interactiv body ...</h1>
+                            <i class="menu-bq-i">w krótce gdy będziemy dodawać skrypty do stron</i><br>
+                            <img src="https://i0.wp.com/www.frankgilroyphysiotherapy.co.uk/wp-content/uploads/2019/04/anatomical_man.png?fit=1000%2C1000&ssl=1" alt="błąd obrazka" class="img-3bar">
+                            <b class="water text-color">Chiciałbym kiedyś stworzyć interaktywne ciało podzielone na grupy mieśniowe tak aby po najechaniu była widoczna nazwa</b>
+                            <br><u class="water">Grafika z <span class="water color">frankgilroyphysiotherapy.co.uk</span></u>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <div class="foot">
+                <b>Stworzył: Kacper <span class="color">Wach&nbsp;&nbsp;</span></b>
+                <i>Grupa 4, nr indeksu: 164438</i>
+                <div id="zegarek" class="clock_one"></div><br>
+                <div id="data" class="clock_one"></div>
+            </div>
+        </footer>
+    </body>
+</html>

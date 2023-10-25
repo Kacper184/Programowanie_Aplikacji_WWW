@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="content-Language" content="pl"/>
+		<meta name="Author" content="Kacper Wach"/>
+        <title>PowerNotes</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/kolorujtlo.js" type="text/JavaScript"></script>
+        <script src="../js/timedate.js" type="text/JavaScript"></script>
+        <script src="../js/jquery-3.7.1.js"></script>
+    </head>
+    <body onload="startclock()">
+        <header>
+            <div class="logo">
+                <a>Power<a class="red-logo">Notes</a></a>
+            </div>
+            <ul class="navbar-ul">
+                <li class="nv-li"><a class="nv-links" href="../index.html">Menu</a></li>
+                <li class="nv-li"><a class="nv-links" href="contact.html">Kontakt</a></li>
+                <li class="nv-li"><a class="nv-links" href="howitworks.html">Jak to działa ?</a></li>
+                <li class="nv-li"><a class="nv-links" href="idea.html">Idea</a></li>
+                <li class="nv-li"><a class="nv-links" href="about.html">O mnie</a></li>
+                <li class="nv-li"><a class="nv-links" href="dojavy.html">JavaScript</a></li>
+            </ul>
+        </header>
+        <main>
+            <form method="post" name="background">
+                <input TYPE="button" VALUE="zolty" ONCLICK="changeBackground('#FFF000')">
+                <input TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')">
+                <input TYPE="button" VALUE="biaty" ONCLICK="changeBackground('#FFFFFF')">
+                <input TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')">
+                <input TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')">
+                <input TYPE="button" VALUE="pomaranczowy" ONCLICK="changeBackground('#FF8000')">
+                <input TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')">
+                <input TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+            </form>
+            <div id="zegarek" class="clock"></div>
+            <div id="data" class="clock"></div>
+            <div>
+                <i id="fontchange">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita cumque numquam, incidunt sapiente eos quam voluptatibus tenetur placeat! Explicabo dolorem molestiae, sit eveniet sapiente vitae illo iusto amet dignissimos.</i><br>
+                <b class="text-color">Zmień kolor czcionki:</b><br>
+                <input type="button" value="Domyślny" onclick="changefontcolor('fontchange', '#a0a0a0')">
+                <input type="button" value="Czerwony" onclick="changefontcolor('fontchange', '#C70039')">
+            </div>
+            <div id="animacjaTestowa1" class="test-block">Kliknij aby powiększyć</div>
+                <script>
+                    $("#animacjaTestowa1").on("click", function(){
+                        $(this).animate({
+                            width: "500px",
+                            opacity: 0.4,
+                            fontSize: "3em",
+                            borderWidth: "10px"
+                        }, 1500);
+                    })
+                </script><br>
+                <div id="animacjaTestowa2" class="test-block">Najedz a się powiększe</div>
+                <script>
+                    $("#animacjaTestowa2").on({"mouseover" : function(){
+                        $(this).animate({
+                            width: "300px"
+                        }, 800);
+                    },
+                    "mouseout" : function() {
+                        $(this).animate({
+                            width: 200
+                        }, 800);
+                    }
+                    });
+                </script><br>
+                <div id="animacjaTestowa3" class="test-block">Kliknij a urosne</div>
+                <script>
+                    $("#animacjaTestowa3").on("click", function(){
+                        if (!$(this).is("animated")) {
+                            $(this).animate({
+                            width: "+=" + 50,
+                            height: "+=" + 10,
+                            opacity: "-=" + 0.1,
+                            duration: 3000
+                        });
+                        }
+                    })
+                </script>
+        </main>
+        <footer>
+            <div class="foot">
+                <b>Stworzył: Kacper <span class="color">Wach&nbsp;&nbsp;</span></b>
+                <i>Grupa 4, nr indeksu: 164438</i>
+            </div>
+        </footer>
+    </body>
+</html>
