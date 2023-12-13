@@ -3,7 +3,7 @@
 session_start();
 $nr_indeksu = '164438';
 $nr_grupy = '4';
-echo 'Kacper Wach '.$nr_indeksu.' grupa: '.$nr_grupy.'<br/><br/>';
+echo 'Kacper Wach ' . $nr_indeksu . ' grupa: ' . $nr_grupy . '<br/><br/>';
 echo 'Zastosowanie metody include() <br/>';
 include 'plik.php';
 echo '<br/>Zastosowałem requre_once<br/>';
@@ -45,24 +45,25 @@ echo '<br/>Zastosowanie While(), for() <br/>';
 // While do odliczania w dół
 $i = 10;
 while ($i >= 0) {
-    echo 'Odliczanie'.$i.'<br/>';
+    echo 'Odliczanie' . $i . '<br/>';
     $i--;
 }
 
 // Tekst o randowmowym Kolorze
-for($j = 0; $j <= 10; $j++) {
-    $random_color = "background-color:rgb(255,".(255 - $j*20).",255)";
-;   echo "<p style='$random_color'>Tekst kolorowy</p>";
+for ($j = 0; $j <= 10; $j++) {
+    $random_color = "background-color:rgb(255," . (255 - $j * 20) . ",255)";
+    ;
+    echo "<p style='$random_color'>Tekst kolorowy</p>";
 }
 
 echo '<br/>Zastosowanie $_GET $_POST $_SESSION <br/>';
 // Sprawdzanie czy istnieje zmienna name jeśli tak to pobiera ją i wyswietla na stronie
-if(isset($_GET['name'])) {
-    echo 'Dzień Dobry '.htmlspecialchars($_GET["name"]);
+if (isset($_GET['name'])) {
+    echo 'Dzień Dobry ' . htmlspecialchars($_GET["name"]);
 }
 
 // Sprawdzanie czy istnieją dane w zmiennej name i email
-if(isset($_POST['name']) && isset($_POST['email'])) {
+if (isset($_POST['name']) && isset($_POST['email'])) {
     echo "Imie: $name";
     echo "Email: $email";
 } else {
@@ -72,5 +73,5 @@ if(isset($_POST['name']) && isset($_POST['email'])) {
 echo '<br/>';
 $_SESSION['Fruit'] = 'Mango';
 $read = $_SESSION['Fruit'];
-echo 'Owoc w superglobalnej tablicy to: '.$read;
+echo 'Owoc w superglobalnej tablicy to: ' . $read;
 ?>
