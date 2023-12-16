@@ -1,4 +1,11 @@
 <?php
+
+// ===================================================
+// Strona Administracyjna pozwalająca zarządzać podstronami
+// Za pomocą jej można edytować, usuwać oraz dodawać podstrony
+// Autentykacja przeprowadzana jest za pomocą formularza logowania
+// ===================================================
+
 // Rozpoczęcie sesji potrzebnej do Logowania/Wylogowania
 session_start();
 

@@ -11,6 +11,11 @@
 
     <?php
 
+    // ===================================================
+    // Strona generująca formularz kontaktowy oraz
+    // Wysyłająca maila do admina strony
+    // ===================================================
+    
     // Funkcja tworzy formularz kontaktowy
     function PokazKontakt()
     {

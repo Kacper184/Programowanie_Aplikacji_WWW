@@ -1,4 +1,8 @@
 <?php
+// =================================================
+// Plik który pokazuje zastosowanie pewnych funkcji i konstrukcji w php
+// =================================================
+
 // Rozpoczęcie sesji
 session_start();
 $nr_indeksu = '164438';

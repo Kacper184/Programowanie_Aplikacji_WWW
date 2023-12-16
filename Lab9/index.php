@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 
 <?php
+
+// ===================================================
+// Główny plik generujący konkretną podstronę na podstawie
+// Podanego idp
+// Jest to główny szkielet strony
+// ===================================================
+
 // Wyświetlanie wszystkich błędów
 error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 

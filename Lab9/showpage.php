@@ -1,4 +1,9 @@
 <?php
+
+// ===================================================
+// showpage.php Pokazuje nam podstrone o konkretnym ID
+// ===================================================
+
 // Dodanie pliku konfiguracyjnego bazy danych oraz podłącznie do niej
 include 'cfg.php';
 
